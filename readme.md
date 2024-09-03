@@ -8,7 +8,9 @@ This repo provides API's for getting your Etherium Transactions and total expens
 ## Test
 If you want to try it I've deployed my backend in [render.com](https://render.com/). 
 
-And here's the Base URL: https://ethertxn.onrender.com/ - copy this and try it in `postman` and use API enpoints mentioned in  **API enpoints section**
+And here's the Base URL: https://ethertxn.onrender.com/ - copy this and try it in `postman` and use API endpoints mentioned in  **API enpoints section**
+
+# Otherwise contribute or get Locally 
 
 
 ## Installation
