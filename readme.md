@@ -10,8 +10,7 @@ This repo provides API's for getting your Etherium Transactions and total expens
 If you want to contribute or get to work with follow the steps:
 
 ```bash
-  git clone 
-  cd
+  git clone https://github.com/guruprasath-v/EtherTXN.git
 ```
 
 After get into directory, 
