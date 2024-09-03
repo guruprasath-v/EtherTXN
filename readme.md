@@ -5,6 +5,12 @@ This repo provides API's for getting your Etherium Transactions and total expens
 
 
 
+## Test
+If you want to try it I've deployed my backend in [render.com](https://render.com/). 
+
+And here's the Base URL: https://ethertxn.onrender.com/ - copy this and try it in `postman` and use API enpoints mentioned in  **API enpoints section**
+
+
 ## Installation
 
 If you want to contribute or get to work with follow the steps:
@@ -44,14 +50,20 @@ npm start
 ## Try these API's 
 Try these API's in postman or Thunderclient
 
-This is for get all transactions: (http://localhost:8080/api/transactions/${address}?page=1):
 
-    parameters: address eg(0xce94e5621a5f7068253c42558c147480f38b5e0d)
+### [API Endpoints Details](#api-endpoints-details)
 
-    query parameters: page(Min 1 to Last page)
+- **GET /api/transactions/{address}?page=1**
+  - Description: Retrieves the List of paginated transactions for a given Ethereum address.
+  - Example URL: `https://ethertxn.onrender.com/api/transactions/0xce94e5621a5f7068253c42558c147480f38b5e0d`
+  - Method: GET
+  - Parameters:
+    - `address`: Ethereum address (required)
+  - query parameters:
+    - `page`: 1 to MaxPage (optional default to 1)
+  - Example response
 
-    response:
-    [
+    ```[
     {
       "blockNumber": "14609155",
       "timeStamp": "1650284543",
@@ -93,16 +105,20 @@ This is for get all transactions: (http://localhost:8080/api/transactions/${addr
       "gasUsed": 21000,
       "confirmations": "6034094",
       "_id": "66d71a325573c7fa35df5b1e"
-    }]
+    }]```
 
-This is for getting your total expenses; (http://localhost:8080/api/total-expenses/${address}):
 
-    parameters: address eg(0xce94e5621a5f7068253c42558c147480f38b5e0d)
-
-    response
-
-    {
-    "address": "0xce94e5621a5f7068253c42558c147480f38b5e0d",
-    "totalExpenses": 0.06374308513796999,
-    "currentPrice": 205432
-    }
+- **GET /api/total-expenses/{address}**:
+  - Description: Retrieves the total expenses and the current Etherium price for a given Ethereum address.
+  - Example URL: `https://ethertxn.onrender.com/api/total-expenses/0xce94e5621a5f7068253c42558c147480f38b5e0d`
+  - Method: GET
+  - Parameters:
+    - `address`: Ethereum address (required)
+  - Example response:
+  ```
+  {
+  "address": "0xce94e5621a5f7068253c42558c147480f38b5e0d",
+  "totalExpenses": 0.06374308513796999,
+  "currentPrice": 205471
+  }
+  ```
