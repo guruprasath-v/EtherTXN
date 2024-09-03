@@ -47,9 +47,6 @@ After this, start the server:
 npm start
 ```
 
-## Try these API's 
-Try these API's in postman or Thunderclient
-
 
 ### [API Endpoints Details](#api-endpoints-details)
 
