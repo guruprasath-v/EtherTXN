@@ -1,0 +1,20 @@
+{
+  "name": "EtherTxn",
+  "version": "1.0.0",
+  "description": "A Node.js application to fetch and store Ethereum transactions",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "axios": "^1.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
