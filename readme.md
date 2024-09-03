@@ -18,8 +18,7 @@ And here's the Base URL: https://ethertxn.onrender.com/ - copy this and try it i
 If you want to contribute or get to work with follow the steps:
 
 ```bash
-  git clone 
-  cd
+  git clone https://github.com/guruprasath-v/EtherTXN
 ```
 
 After get into directory, 
